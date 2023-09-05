@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.solar-system {
+    
+    background-color: black; 
+
+    height: 750px;
+   
+    
+    
+}
+
+
+
+@keyframes rotateSun {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sun {
+    width: 200px; 
+    height: 200px;
+    margin: 50px; 
+    animation: rotateSun 10s linear infinite;
+    position: absolute;
+    top: 15rem; 
+    left: 40rem;
+}
+
+.sun img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* .mercury {
+    width: 100px; 
+    height: 100px;
+    margin: 50px; 
+    animation: circleMercury 10s linear infinite, rotateMercury 5s linear infinite; 
+    position: absolute;
+    top: 10rem; 
+    left: 40rem;
+    
+}
+
+.mercury img {
+    width: 100%;
+    height: 100%;
+} */
+
+
+
+/* @keyframes rotateMercury {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes circleMercury {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(100px) translateY(0) rotate(360deg);
+    }
+} */
+
+/* .mercury {
+    width: 100px; 
+    height: 100px;
+    margin: 50px; 
+    animation: rotateMercury 10s linear infinite, circleMercury 5s linear infinite; 
+    position: absolute;
+    top: 10rem; 
+    left: 40rem;
+    
+} */
+
+@keyframes rotatePlanet {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes orbit {
+    0% {
+        transform: translateX(100px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(100px) rotate(360deg);
+    }
+}
+
+.mercury {
+    width: 50px; 
+    height: 50px;
+    position: absolute;
+    top: 23rem;
+    left: 35%;
+    transform-origin: 300% 50%; 
+    animation: rotatePlanet 7s linear infinite, orbit 3s linear infinite; 
+}
+
+.mercury img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.venus {
+    width: 70px; 
+    height: 77px;
+    position: absolute;
+    top: 22rem;
+    left: 29%;
+    transform-origin: 340% 50%; 
+    animation: rotatePlanet 7s linear infinite, orbit 7s linear infinite; 
+}
+
+.venus img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.earth .for-earth  {
+    width: 70px; 
+    height: 77px;
+    position: absolute;
+    top: 22rem;
+    left: 23%;
+    transform-origin: 480% 70%; 
+    animation: rotatePlanet 10s linear infinite, orbit 10s linear infinite; 
+}
+
+ .earth  .for-earth img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+ .moon  {
+    width: 30px; 
+    height: 27px;
+    position: absolute;
+    top: 22rem;
+    left: 23%;
+    transform-origin:1180% 70%; 
+    animation: rotatePlanet 10s linear infinite, orbit 10s linear infinite; 
+}
+
+
+.moon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.mars  {
+    width: 60px; 
+    height: 60px;
+    position: absolute;
+    top: 22rem;
+    left: 17%;
+    transform-origin:680% 70%; 
+    animation: rotatePlanet 14s linear infinite, orbit 14s linear infinite; 
+}
+
+
+.mars img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.jupiter  {
+    width: 120px; 
+    height:90px;
+    position: absolute;
+    top: 22rem;
+    left: 9%;
+    transform-origin:460% 60%; 
+    animation: rotatePlanet 17s linear infinite, orbit 14s linear infinite; 
+}
+
+
+.jupiter img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.saturn  {
+    width: 130px; 
+    height:70px;
+    position: absolute;
+    top: 22rem;
+    left: 2%;
+    transform-origin:500% 60%; 
+    animation: rotatePlanet 25s linear infinite, orbit 24s linear infinite; 
+}
+
+
+.saturn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+
+
+.neptune  {
+    width: 30px; 
+    height:30px;
+    position: absolute;
+    top: 22rem;
+    left: -1%;
+    transform-origin:2300% 70%; 
+    animation: rotatePlanet 14s linear infinite, orbit 34s linear infinite; 
+}
+
+
+.neptune img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+
+
+
+
+  
